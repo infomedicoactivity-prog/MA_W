@@ -16,8 +16,8 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
-              alt="Healthcare professionals collaborating in medical consultation" 
+              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Team of diverse medical doctors in professional healthcare setting" 
               className="rounded-xl shadow-lg w-full h-auto"
               data-testid="mission-image"
             />
