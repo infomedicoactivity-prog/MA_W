@@ -187,159 +187,29 @@ export default function Doctors() {
                 </p>
               </div>
               
-              {isSubmitted ? (
-                <div className="text-center py-8" data-testid="success-message">
+              <div className="text-center py-8" data-testid="registration-section">
+                <div className="mb-6">
                   <CheckCircle className="w-16 h-16 text-health-green-600 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Welcome to MedicoActivity!</h3>
-                  <p className="text-gray-600">Your professional profile has been submitted for review. We'll be in touch soon!</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to Join?</h3>
+                  <p className="text-gray-600 mb-6">Complete your professional profile using our registration form.</p>
                 </div>
-              ) : (
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" data-testid="doctor-form">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <FormField
-                        control={form.control}
-                        name="name"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Full Name *</FormLabel>
-                            <FormControl>
-                              <Input {...field} data-testid="input-name" />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="specialization"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Medical Specialization *</FormLabel>
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                              <FormControl>
-                                <SelectTrigger data-testid="select-specialization">
-                                  <SelectValue placeholder="Select your specialization" />
-                                </SelectTrigger>
-                              </FormControl>
-                              <SelectContent>
-                                <SelectItem value="cardiology">Cardiology</SelectItem>
-                                <SelectItem value="neurology">Neurology</SelectItem>
-                                <SelectItem value="oncology">Oncology</SelectItem>
-                                <SelectItem value="orthopedics">Orthopedics</SelectItem>
-                                <SelectItem value="pediatrics">Pediatrics</SelectItem>
-                                <SelectItem value="psychiatry">Psychiatry</SelectItem>
-                                <SelectItem value="radiology">Radiology</SelectItem>
-                                <SelectItem value="surgery">Surgery</SelectItem>
-                                <SelectItem value="internal-medicine">Internal Medicine</SelectItem>
-                                <SelectItem value="emergency-medicine">Emergency Medicine</SelectItem>
-                                <SelectItem value="family-medicine">Family Medicine</SelectItem>
-                                <SelectItem value="dermatology">Dermatology</SelectItem>
-                                <SelectItem value="anesthesiology">Anesthesiology</SelectItem>
-                                <SelectItem value="pathology">Pathology</SelectItem>
-                                <SelectItem value="other">Other</SelectItem>
-                              </SelectContent>
-                            </Select>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-                    
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <FormField
-                        control={form.control}
-                        name="location"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Location (City, State/Country) *</FormLabel>
-                            <FormControl>
-                              <Input 
-                                {...field} 
-                                placeholder="e.g., New York, NY or London, UK"
-                                data-testid="input-location"
-                              />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Email Address *</FormLabel>
-                            <FormControl>
-                              <Input type="email" {...field} data-testid="input-email" />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-                    
-                    <FormField
-                      control={form.control}
-                      name="phone"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Phone Number *</FormLabel>
-                          <FormControl>
-                            <Input type="tel" {...field} data-testid="input-phone" />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Upload Resume/CV
-                      </label>
-                      <div 
-                        className="w-full px-4 py-8 border-2 border-dashed border-gray-300 rounded-lg text-center hover:border-health-green-500 transition-colors cursor-pointer"
-                        onClick={() => document.getElementById('resume-upload')?.click()}
-                        data-testid="file-upload-area"
-                      >
-                        <input 
-                          type="file" 
-                          id="resume-upload" 
-                          name="resume" 
-                          accept=".pdf,.doc,.docx" 
-                          className="hidden"
-                          onChange={handleFileChange}
-                          data-testid="file-input"
-                        />
-                        {selectedFile ? (
-                          <>
-                            <CheckCircle className="mx-auto h-12 w-12 text-health-green-500 mb-4" />
-                            <p className="text-sm text-health-green-600 font-medium">{selectedFile.name}</p>
-                            <p className="text-xs text-gray-400 mt-1">File uploaded successfully</p>
-                          </>
-                        ) : (
-                          <>
-                            <Upload className="mx-auto h-12 w-12 text-gray-400 mb-4" />
-                            <p className="text-sm text-gray-600">Click to upload your resume or CV</p>
-                            <p className="text-xs text-gray-400 mt-1">PDF, DOC, or DOCX (Max 5MB)</p>
-                          </>
-                        )}
-                      </div>
-                    </div>
-                    
-                    <div className="text-center">
-                      <Button 
-                        type="submit" 
-                        disabled={mutation.isPending}
-                        className="bg-health-green-600 text-white px-8 py-4 text-lg font-semibold hover:bg-health-green-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
-                        data-testid="button-submit"
-                      >
-                        {mutation.isPending ? "Creating Profile..." : "Create Professional Profile"}
-                      </Button>
-                    </div>
-                  </form>
-                </Form>
-              )}
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdY9ZHe86KSLQYnaHc2XIefT2hUHrHhQHzwB5mV0XtULcGOlg/viewform?usp=sharing&ouid=115535487236519249702"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="google-form-link"
+                >
+                  <Button 
+                    className="bg-health-green-600 text-white px-8 py-4 text-lg font-semibold hover:bg-health-green-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
+                    data-testid="button-register"
+                  >
+                    Complete Registration Form
+                  </Button>
+                </a>
+                <p className="text-sm text-gray-500 mt-4">
+                  Opens in a new tab • Takes 2-3 minutes to complete
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
