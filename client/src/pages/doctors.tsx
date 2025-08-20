@@ -166,8 +166,8 @@ export default function Doctors() {
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Doctors collaborating in consultation" 
+              src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Medical professionals in modern hospital setting" 
               className="rounded-xl shadow-lg w-full h-auto"
               data-testid="doctors-image"
             />
