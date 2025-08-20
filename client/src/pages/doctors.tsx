@@ -166,8 +166,8 @@ export default function Doctors() {
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
-              alt="Team of diverse medical doctors in professional healthcare setting" 
+              src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Healthcare professional wearing medical mask in hospital setting" 
               className="rounded-xl shadow-lg w-full h-auto"
               data-testid="doctors-image"
             />
