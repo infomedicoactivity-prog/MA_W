@@ -20,7 +20,7 @@ export default function Footer() {
               <a href="#" className="text-gray-400 hover:text-white transition-colors" data-testid="social-twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors" data-testid="social-linkedin">
+              <a href="https://www.linkedin.com/in/medico-activity-b97831369" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" data-testid="social-linkedin">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors" data-testid="social-facebook">
