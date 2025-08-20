@@ -1,0 +1,80 @@
+Build a static, professional website for MedicoActivity.
+This will be a one-stop solution for marketing, research, and collaborations between:
+
+Pharma companies
+
+Medical device companies
+
+Clinical Research Organizations (CROs)
+
+Healthcare marketing professionals
+
+Doctors
+
+The website should highlight that doctors, beyond treating patients, can collaborate commercially with industry through MedicoActivity.
+
+Website Structure
+
+Home Page
+
+Hero section: “Connecting Healthcare Industry and Doctors for Marketing, Research & Collaboration.”
+
+Short intro: MedicoActivity bridges doctors, pharma, devices, CROs, and marketing professionals.
+
+2 key buttons: “For Companies & Marketing Professionals” | “For Doctors”
+
+For Companies & Marketing Professionals Page
+
+Explain how pharma, device makers, CROs, and marketing professionals can use MedicoActivity to:
+
+Find doctors for product promotions and awareness campaigns
+
+Engage doctors for advisory boards, clinical trials, or consultations
+
+Build long-term collaborations in healthcare marketing and research
+
+Contact form for companies & professionals (Name, Organization, Email, Phone, Area of Interest, Message).
+
+For Doctors Page
+
+Explain that doctors can expand their role beyond patients and join industry collaborations:
+
+Research collaborations (clinical trials, product testing)
+
+Advisory roles for pharma & devices
+
+Marketing partnerships (product awareness, educational programs)
+
+Consulting for companies & CROs
+
+Signup form: Name, Specialization, Location, Email, Phone, Upload Resume/Profile.
+
+About Us Page
+
+Mission: To be the bridge between doctors and healthcare industry.
+
+Vision: Empower collaborations in marketing, clinical research, and product innovation.
+
+Contact Page
+
+Contact details (email, phone, address).
+
+Simple contact form.
+
+Design & Theme
+
+Professional, healthcare-focused (blue, white, green).
+
+Modern, minimal layout with healthcare icons and illustrations.
+
+Navigation bar: Home | For Companies & Marketing Professionals | For Doctors | About Us | Contact
+
+Footer: MedicoActivity branding, copyright, links.
+
+Functionality
+
+All forms (doctor signup, company/marketing contact, general inquiries) should collect information and be stored or emailed.
+
+Static website with simple interactivity.
+
+No networking feed or messaging system required.
