@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Address</h3>
-                  <p className="text-gray-600">info@medicoactivity.com</p>
+                  <p className="text-gray-600">info.medicoactivity@gmail.com</p>
                   <p className="text-gray-600">partnerships@medicoactivity.com</p>
                 </div>
               </div>
@@ -101,10 +101,9 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Office Address</h3>
                   <p className="text-gray-600">
-                    123 Healthcare Innovation Blvd<br />
-                    Suite 456<br />
-                    Medical District, NY 10001<br />
-                    United States
+                    #140, Garebhavipalya<br />
+                    Bangalore 560068<br />
+                    Karnataka, India
                   </p>
                 </div>
               </div>
