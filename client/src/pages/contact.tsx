@@ -79,7 +79,6 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Address</h3>
                   <p className="text-gray-600">info.medicoactivity@gmail.com</p>
-                  <p className="text-gray-600">partnerships@medicoactivity.com</p>
                 </div>
               </div>
               
@@ -88,9 +87,8 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-health-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone Numbers</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                  <p className="text-gray-600">+1 (555) 987-6543 (Partnerships)</p>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone Number</h3>
+                  <p className="text-gray-600">+91 7019580374</p>
                 </div>
               </div>
               
@@ -114,8 +112,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Business Hours</h3>
-                  <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
-                  <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM EST</p>
+                  <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+                  <p className="text-gray-600">Saturday: 10:00 AM - 2:00 PM IST</p>
                   <p className="text-gray-600">Sunday: Closed</p>
                 </div>
               </div>
