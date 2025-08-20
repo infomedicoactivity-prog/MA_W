@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(210, 25%, 7.8431%);
+  --card: hsl(180, 6.6667%, 97.0588%);
+  --card-foreground: hsl(210, 25%, 7.8431%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 25%, 7.8431%);
+  --primary: hsl(208, 100%, 40%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 25%, 7.8431%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(240, 1.9608%, 90%);
+  --muted-foreground: hsl(210, 25%, 7.8431%);
+  --accent: hsl(211.5789, 51.3514%, 92.7451%);
+  --accent-foreground: hsl(208, 100%, 40%);
+  --destructive: hsl(356.3033, 90.5579%, 54.3137%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(201.4286, 30.4348%, 90.9804%);
+  --input: hsl(200, 23.0769%, 97.4510%);
+  --ring: hsl(208, 100%, 40%);
+  --medical-blue-50: hsl(214, 100%, 97%);
+  --medical-blue-500: hsl(208, 100%, 40%);
+  --medical-blue-600: hsl(208, 100%, 35%);
+  --medical-blue-700: hsl(208, 100%, 30%);
+  --health-green-50: hsl(151, 88%, 95%);
+  --health-green-500: hsl(158, 64%, 52%);
+  --health-green-600: hsl(158, 73%, 46%);
+  --health-green-700: hsl(158, 81%, 41%);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 1.3rem;
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(200, 6.6667%, 91.1765%);
+  --card: hsl(228, 9.8039%, 10%);
+  --card-foreground: hsl(0, 0%, 85.0980%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(200, 6.6667%, 91.1765%);
+  --primary: hsl(208, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(195, 15.3846%, 94.9020%);
+  --secondary-foreground: hsl(210, 25%, 7.8431%);
+  --muted: hsl(0, 0%, 9.4118%);
+  --muted-foreground: hsl(210, 3.3898%, 46.2745%);
+  --accent: hsl(205.7143, 70%, 7.8431%);
+  --accent-foreground: hsl(208, 100%, 50%);
+  --destructive: hsl(356.3033, 90.5579%, 54.3137%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5.2632%, 14.9020%);
+  --input: hsl(207.6923, 27.6596%, 18.4314%);
+  --ring: hsl(208, 100%, 50%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .medical-blue-50 {
+    background-color: var(--medical-blue-50);
+  }
+  .medical-blue-500 {
+    color: var(--medical-blue-500);
+  }
+  .medical-blue-600 {
+    color: var(--medical-blue-600);
+  }
+  .medical-blue-700 {
+    color: var(--medical-blue-700);
+  }
+  .bg-medical-blue-500 {
+    background-color: var(--medical-blue-500);
+  }
+  .bg-medical-blue-600 {
+    background-color: var(--medical-blue-600);
+  }
+  .bg-medical-blue-700 {
+    background-color: var(--medical-blue-700);
+  }
+  .health-green-500 {
+    color: var(--health-green-500);
+  }
+  .health-green-600 {
+    color: var(--health-green-600);
+  }
+  .health-green-700 {
+    color: var(--health-green-700);
+  }
+  .bg-health-green-500 {
+    background-color: var(--health-green-500);
+  }
+  .bg-health-green-600 {
+    background-color: var(--health-green-600);
+  }
+  .bg-health-green-700 {
+    background-color: var(--health-green-700);
+  }
+  .bg-health-green-50 {
+    background-color: var(--health-green-50);
+  }
+}
