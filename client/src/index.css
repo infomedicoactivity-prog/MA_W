@@ -75,42 +75,55 @@
   .medical-blue-50 {
     background-color: var(--medical-blue-50);
   }
+
   .medical-blue-500 {
     color: var(--medical-blue-500);
   }
+
   .medical-blue-600 {
     color: var(--medical-blue-600);
   }
+
   .medical-blue-700 {
     color: var(--medical-blue-700);
   }
+
   .bg-medical-blue-500 {
     background-color: var(--medical-blue-500);
   }
+
   .bg-medical-blue-600 {
     background-color: var(--medical-blue-600);
   }
+
   .bg-medical-blue-700 {
     background-color: var(--medical-blue-700);
   }
+
   .health-green-500 {
     color: var(--health-green-500);
   }
+
   .health-green-600 {
     color: var(--health-green-600);
   }
+
   .health-green-700 {
     color: var(--health-green-700);
   }
+
   .bg-health-green-500 {
     background-color: var(--health-green-500);
   }
+
   .bg-health-green-600 {
     background-color: var(--health-green-600);
   }
+
   .bg-health-green-700 {
     background-color: var(--health-green-700);
   }
+
   .bg-health-green-50 {
     background-color: var(--health-green-50);
   }
