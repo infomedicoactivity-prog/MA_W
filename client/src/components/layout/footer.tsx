@@ -1,4 +1,4 @@
-import { Twitter, LinkedinIcon, Facebook } from "lucide-react";
+import { X, Linkedin, Facebook } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Footer() {
@@ -28,7 +28,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-white transition-colors"
                 data-testid="social-twitter"
               >
-                <Twitter className="w-5 h-5" />
+                <X className="w-5 h-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/medico-activity-b97831369"
@@ -37,7 +37,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-white transition-colors"
                 data-testid="social-linkedin"
               >
-                <LinkedinIcon className="w-5 h-5" />
+                <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="#"
