@@ -9,7 +9,7 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  base: "./",
+  base: "/MA_W/",
   build: {
     outDir: "dist",
     emptyOutDir: true,
