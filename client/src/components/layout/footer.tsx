@@ -1,4 +1,5 @@
-import { X, LinkedinIcon, Facebook } from "lucide-react";
+import { X, Linkedin, Facebook } from "lucide-react";
+
 import { Link } from "wouter";
 
 export default function Footer() {
@@ -37,7 +38,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-white transition-colors"
                 data-testid="social-linkedin"
               >
-                <LinkedinIcon className="w-5 h-5" />
+                <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="#"
