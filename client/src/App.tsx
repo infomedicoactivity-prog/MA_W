@@ -11,6 +11,7 @@ import Companies from "@/pages/companies";
 import Doctors from "@/pages/doctors";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
+import './index.css';
 
 function Router() {
   return (
