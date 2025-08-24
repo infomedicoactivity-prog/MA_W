@@ -1,41 +1,35 @@
 #!/bin/bash
 
-# GitHub Pages Deployment Script for MedicoActivity Website
+echo "🚀 Deploying MedicoActivity to GitHub Pages..."
 
-echo "🚀 Starting GitHub Pages deployment setup..."
+# Create a new repository structure for GitHub Pages
+mkdir -p github-deploy
+cd github-deploy
 
-# Step 1: Copy the GitHub-specific configuration files
-echo "📋 Setting up GitHub Pages configuration..."
-cp package-github.json package.json
-cp vite-github.config.ts vite.config.ts
+# Initialize git repository
+git init
+git branch -M main
 
-# Step 2: Remove Replit-specific files that aren't needed for GitHub Pages
-echo "🧹 Cleaning up unnecessary files..."
-rm -rf server/
-rm -rf shared/
-rm -f drizzle.config.ts
-rm -f .replit
+# Copy the static HTML file as index.html
+cp ../index-fixed.html index.html
 
-# Step 3: Install dependencies
-echo "📦 Installing dependencies..."
-npm install
+# Create CNAME file for custom domain
+echo "medicoactivity.com" > CNAME
 
-# Step 4: Build the project
-echo "🔨 Building the project..."
-npm run build
+# Add and commit files
+git add .
+git commit -m "Deploy MedicoActivity website to GitHub Pages"
 
-echo "✅ GitHub Pages setup complete!"
+echo "✅ Repository ready for GitHub Pages deployment!"
 echo ""
-echo "📝 Next steps:"
-echo "1. Create a GitHub repository"
-echo "2. Update the 'base' field in vite.config.ts with your repository name (if needed)"
-echo "3. Push your code to GitHub:"
-echo "   git init"
-echo "   git add ."
-echo "   git commit -m 'Initial commit'"
-echo "   git branch -M main"
-echo "   git remote add origin https://github.com/yourusername/your-repo-name.git"
+echo "Next steps:"
+echo "1. Create a new GitHub repository (public)"
+echo "2. Add this as the remote origin:"
+echo "   git remote add origin https://github.com/yourusername/medicoactivity.git"
+echo "3. Push to GitHub:"
 echo "   git push -u origin main"
-echo ""
-echo "4. Enable GitHub Pages in repository settings with 'GitHub Actions' as source"
-echo "5. Your site will be available at: https://yourusername.github.io/your-repo-name/"
+echo "4. Enable GitHub Pages in repository Settings → Pages"
+echo "5. Set custom domain to: medicoactivity.com"
+echo "6. Configure DNS at Hostinger to point to GitHub Pages"
+
+cd ..

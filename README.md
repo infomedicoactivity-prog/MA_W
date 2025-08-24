@@ -1,76 +1,41 @@
-# MedicoActivity Website
+# MedicoActivity Website Deployment Guide
 
-A professional healthcare collaboration platform website connecting pharmaceutical companies, medical device manufacturers, CROs, healthcare marketing professionals, and doctors.
+Your domain `medicoactivity.com` is currently showing a Hostinger parking page because the website files haven't been uploaded yet.
 
-## GitHub Pages Deployment
+## Quick Fix Options:
 
-This project is configured for easy deployment to GitHub Pages for free hosting.
+### Option 1: GitHub Pages (Free & Easy)
+1. Run: `./deploy-github.sh`
+2. Create a public GitHub repository
+3. Push the generated files
+4. Enable GitHub Pages
+5. Set custom domain to `medicoactivity.com`
+6. Update DNS settings at Hostinger
 
-### Setup Instructions
+### Option 2: Upload to Hostinger
+1. Log into your Hostinger account
+2. Go to File Manager
+3. Upload `index-fixed.html` as `index.html`
+4. Your styled website will be live immediately
 
-1. **Create a GitHub Repository**
-   - Create a new repository on GitHub (e.g., `medicoactivity-website`)
-   - Make note of the repository name for the next step
+## Files Ready for Deployment:
 
-2. **Update Configuration**
-   - Edit `vite-github.config.ts` and replace `/medicoactivity-website/` with your repository name in the `base` field
-   - This ensures proper routing for GitHub Pages
+- **`index-fixed.html`** - Complete styled website (self-contained)
+- **`index.html`** - Alternative version
+- **`deploy-github.sh`** - Automated GitHub Pages setup
 
-3. **Push Your Code**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/your-repo-name.git
-   git push -u origin main
-   ```
+## Why Your Site Shows No Styling:
 
-4. **Enable GitHub Pages**
-   - Go to your repository on GitHub
-   - Click "Settings" tab
-   - Scroll to "Pages" in the left sidebar
-   - Under "Source", select "GitHub Actions"
-   - The workflow will automatically build and deploy your site
+The current `medicoactivity.com` is just Hostinger's default parking page. None of your beautiful website files are uploaded yet.
 
-5. **Access Your Website**
-   - Your site will be available at: `https://yourusername.github.io/your-repo-name/`
-   - The deployment workflow runs automatically on every push to the main branch
+## DNS Configuration for GitHub Pages:
 
-### Local Development
+If using GitHub Pages with custom domain:
+1. Add CNAME record: `medicoactivity.com` → `yourusername.github.io`
+2. Add A records pointing to GitHub Pages IPs:
+   - 185.199.108.153
+   - 185.199.109.153
+   - 185.199.110.153
+   - 185.199.111.153
 
-For local development, use the original setup:
-
-```bash
-npm install
-npm run dev
-```
-
-### Building for Production
-
-To build the static files locally:
-
-```bash
-npm run build
-```
-
-The built files will be in the `dist` folder.
-
-## Features
-
-- **Professional Healthcare Design**: Medical-themed color scheme with blue, white, and green palette
-- **Responsive Layout**: Works perfectly on desktop, tablet, and mobile devices
-- **Google Forms Integration**: Direct links to Google Forms for data collection
-- **SEO Optimized**: Proper meta tags and structured content for search engines
-- **Modern Tech Stack**: React 18, TypeScript, Tailwind CSS, and Vite
-
-## Contact Information
-
-- **Email**: info.medicoactivity@gmail.com
-- **Phone**: +91 7019580374
-- **Address**: #140, Garebhavipalya, Bangalore 560068, India
-- **LinkedIn**: [MedicoActivity](https://www.linkedin.com/in/medico-activity-b97831369)
-
-## License
-
-© 2025 MedicoActivity. All rights reserved.
+Your styled website with medical blue/green theme, forms, and all functionality is ready to deploy!
