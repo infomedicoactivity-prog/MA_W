@@ -1,6 +1,6 @@
 {
   "name": "rest-express",
-  "homepage":"https://infomedicoactivity-prog.github.io/MA_W/"
+  "homepage":"https://infomedicoactivity-prog.github.io/MA_W/",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
